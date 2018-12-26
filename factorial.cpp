@@ -2,7 +2,7 @@
 template<int n>
 class factorial{
     public:
-    enum{res=n*jc<n-1>::res};
+    enum{res=n*factorial<n-1>::res};
 };
 template<>
 class factorial<1>{
